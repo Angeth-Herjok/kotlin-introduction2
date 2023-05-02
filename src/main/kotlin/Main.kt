@@ -3,10 +3,13 @@ fun main() {
     introduction("Angeth",20,"AkiraChix")
 
     println( add(21,34,10,8))
+
     println(average(8,4,5,6,7))
+
     usersDetails("Lucy",23,"Kenya")
 
     personsRecords("Susan",25,"+2567986535","susanamanda@gmail.com",52.6,"Ugandan")
+
 
 
 }
@@ -49,17 +52,12 @@ fun average(number:Int,number1:Int,number2:Int,number3:Int,number4:Int):Double{
 //4. You are creating an app to capture a person’s records. Some of the data you will
 //capture includes full name, age, phone number, email, weight in kg, and citizen. For the
 //citizen field, you will track whether a student is a Ugandan or not. (3 points)
-fun personsRecords(fullName:String,age: Int,phoneNumber: String,email:String,weight:Double,citizen:String){
-    val student="Susan"
-    val student1="Mary"
-    if (student==student1){
-        println("The student is not a Ugandan")
-    }
-    else if (student!=student1){
-        println("The student is a Ugandan")
-    }
-    else{
-        println("Student is not a Ugandan")
-    }
-
+fun personsRecords(fullName:String,age: Int,phoneNumber: String,email:String,weight:Double,citizen:String) {
+    println(fullName)
+    println(age)
+    println(phoneNumber)
+    println(email)
+    println(weight)
+    var citizen="Ugandan"
+    println(true)
 }
