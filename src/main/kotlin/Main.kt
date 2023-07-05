@@ -10,20 +10,25 @@ fun main() {
 
     personsRecords("Susan",25,"+2567986535","susanamanda@gmail.com",52.6,"Ugandan")
 
-
-
+message()
+println( student("Angeth",65))
+    println(trimWhiteSpace(" angeth "))
+    println(messages("jon","jon"))
 }
 fun divideTwoNumbers(num1:Int,num2:Int){
     var dividend=num1/num2
     println(dividend)
 
 }
-
 fun introduction(name:String,age:Int,school:String){
     var message="Hello, my name is $name.I am $age years old. I go to $school"
 //    println("Hello, my name is $name.I am $age years old. I go to $school")
     println(message)
 }
+
+
+//                        ASSIGNMENT
+
 //1. Create and invoke a function that takes in a users name, age, and nationality and prints out
 // “Hello my name is ${name}, I am ${age} and I am from ${nationality}” e.g
 //given “Lucy”, 23, and “Kenya” it will print out “Hello my name is Lucy, I am 23 years old and,
@@ -43,6 +48,7 @@ fun add(num3:Int,num4:Int,num5:Int,num6:Int):Int {
 
 
 //3. Create and invoke a function that given any 5 numbers, it returns their average (2 points)
+
 fun average(number:Int,number1:Int,number2:Int,number3:Int,number4:Int):Double{
        var sumAverage=number1+number+number2+number3+number4
         return sumAverage/5.0
@@ -52,6 +58,7 @@ fun average(number:Int,number1:Int,number2:Int,number3:Int,number4:Int):Double{
 //4. You are creating an app to capture a person’s records. Some of the data you will
 //capture includes full name, age, phone number, email, weight in kg, and citizen. For the
 //citizen field, you will track whether a student is a Ugandan or not. (3 points)
+
 fun personsRecords(fullName:String,age: Int,phoneNumber: String,email:String,weight:Double,citizen:String) {
     println(fullName)
     println(age)
@@ -60,4 +67,30 @@ fun personsRecords(fullName:String,age: Int,phoneNumber: String,email:String,wei
     println(weight)
     var citizen="Ugandan"
     println(true)
+}
+
+//replace
+fun message(){
+//    var details="My name is Shiko"
+//    var subject="I like data analyst"
+    var allDetails="My name is Shiko." + "I like data analyst"
+    println(allDetails.replace("I like data analyst","I like web development"))
+
+}
+fun student(name:String,age: Int):String{
+    return "Hello, name is $name and I am $age years old"
+}
+//to return white space
+fun trimWhiteSpace(str1:String):String{
+    return str1.trim()
+//    return str1.trimEnd()
+//    return str1.trimStart()
+}
+fun messages(message1:String,message2: String):Boolean{
+    if (message1.equals(message2)){
+        return true
+    }
+    else{
+        return false
+    }
 }
